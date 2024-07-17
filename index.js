@@ -1,9 +1,9 @@
 // Load in our Express framework
 const express       = require(`express`)
-
+var bodyParser = require('body-parser')
 // Create a new Express instance called "app"
 const app           = express()
-
+app.use(bodyParser.urlencoded({ extended: false }))
 // Load in our RESTful routers
 const routers = require('./routers/index.js')
 

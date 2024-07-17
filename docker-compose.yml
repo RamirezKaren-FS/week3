@@ -1,6 +1,6 @@
 services:
   wdv442-mysql:
-    image: mysql:latest
+    image: mysql:8.0.37
     restart: always
     networks: 
       - wdv442

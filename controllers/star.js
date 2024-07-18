@@ -5,7 +5,7 @@ const index = async (req, res) => {
   res.status(200).json(stars)
 }
 
-// Show resource
+// Show resourc
 const show = async (req, res) => {
   const star = await Star.findByPk( req.params.id,
     {

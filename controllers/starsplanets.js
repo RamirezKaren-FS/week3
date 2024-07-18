@@ -1,7 +1,8 @@
-const { StarsPlanets, Planet } = require("../models/index.js")
+const { Planet } = require("../models/index.js")
+const {StarsPlanets} = require("../models/starsplanets.js")
 // Show all resources
 const index = async (req, res) => {
-    const stars = await Star.findAll()
+    const stars = await StarsPlanets.findAll()
     res.status(200).json(stars)
 }
 

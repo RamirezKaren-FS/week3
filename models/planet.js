@@ -11,12 +11,15 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      models.Planet.hasMany(models.StarsPlanets)
+      models.Planet.belongsTo(models.Star)
     }
   }
   Planet.init({
     name: DataTypes.STRING,
     age: DataTypes.STRING,
-    type: DataTypes.STRING
+    type: DataTypes.STRING,
+    starId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Planet',

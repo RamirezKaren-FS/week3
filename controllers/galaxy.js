@@ -1,4 +1,4 @@
-const { Galaxy } = require("../models/index.js")
+const { Galaxy, Star } = require("../models/index.js")
 
 // Show all resources
 const index = async (req, res) => {
@@ -6,9 +6,12 @@ const index = async (req, res) => {
   res.status(200).json(galaxies)
 }
 
-// Show resource
+// Show resourc
 const show = async (req, res) => {
-  const galaxy = await Galaxy.findByPk( req.params.id )
+  const galaxy = await Galaxy.findByPk( req.params.id, {
+    include: [ Star ]
+  } )
+  // const stars = await galaxy.getStars()
   res.status(200).json(galaxy)
 }
 

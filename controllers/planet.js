@@ -1,13 +1,15 @@
-const { Planet } = require("../models/index.js")
+const { Planet, StarsPlanet } = require("../models/index.js")
 // Show all resources
 const index = async (req, res) => {
   const planets = await Planet.findAll()
   res.status(200).json(planets)
 }
 
-// Show resource
+// Show resourc
 const show = async (req, res) => {
-  const planet = await Planet.findOne( { where: { id: req.params.id} } )
+  const planet = await Planet.findByPk( req.params.id, {
+    include: [ StarsPlanet ]
+  } )
   res.status(200).json(planet)
 }
 

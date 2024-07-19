@@ -9,7 +9,7 @@ const index = async (req, res) => {
 // Show resourc
 const show = async (req, res) => {
   const planet = await Planet.findByPk( req.params.id, {
-    include: [ Star, StarsPlants]
+    include: [ Star ] // StarsPlants
   } )
   res.status(200).json(planet)
 }

@@ -7,11 +7,14 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // Load in our RESTful routers
 const routers = require('./routers/index.js')
 
+app.set('views', './views')
+app.set('view engine', 'twig')
 // Home page welcome middleware
 app.get('/', (req, res) => {
   res
     .status(200)
-    .send('Welcome to Star Tracker Library')
+    .render('home')
+    // .send('Welcome to Star Tracker Library')
 })
 
 // Register our RESTful routers with our "app"

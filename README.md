@@ -2,6 +2,11 @@
 
 This is the space tracker app for my Advanced Server-side Languages class (WDV442).
 
+# 07/23 FINAL WEEK  
+    Have started on the addition of twig into the project. It has been very interesting seeing how it works and implementing it into the app. I have barely started and hope to not have too many issues working with it and getting all my information to show properly.
+
+
+
 # 07/18 - update
 All CRUD operations have been successfully done and pdf has been created for project. Figured out the StarsPlants was not meant to actually create the items as I looked over the lecture videos in Part 3. I configured the model to hold the proper ID but still didnt have it working properly and do not want to mess with it more as I'm scared of messing up a migration by undoing and redoing them. Anything related to the StarsPlanets has been commented out to not cause errors. Because I created it before I knew what was needed there are two attributes that are not needed which I did not remove again for fear of messing up any other code or migration. 
 

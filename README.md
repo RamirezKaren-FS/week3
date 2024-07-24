@@ -2,7 +2,11 @@
 
 This is the space tracker app for my Advanced Server-side Languages class (WDV442).
 
-# 07/24 
+
+# -- Update 07/24
+Corrected the error with creating Galaxies now all CRUD operations are working! Starting routes for Star and then Planet 
+
+# 07/24
 Was able to get the twig files working. Can now see a list of Galaxies and edit an individual but can not get the new.twig file to pull to create a new one. 
 
 # 07/23 FINAL WEEK  

@@ -1,6 +1,6 @@
 const { Galaxy, Star } = require("../models/index.js")
 
-// Show all resources
+// Show all resource
 const index = async (req, res) => {
   const galaxies = await Galaxy.findAll()
   res.status(200).render('Galaxy/index.twig', { galaxies })
@@ -13,7 +13,8 @@ const form = async (req, res) => {
     const galaxy = await Galaxy.findByPk( req.params.id )
     return res.status(200).render(`Galaxy/edit.twig`, { galaxy })
   } 
-    res.render('Galaxy/new.twig')
+    res.status(200).render('Galaxy/new.twig')
+    
 }
 
 // Show resourc

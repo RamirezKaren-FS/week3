@@ -2,14 +2,24 @@
 
 {% block main_content %}
 
-<h1>#{{galaxy.id}} -- <strong>{{galaxy.name}}</strong> </h1>
+<h1>#{{galaxy.id}} -- <strong>Galaxy: {{galaxy.name}}</strong> </h1>
 
+
+<div>
+    <p>Galaxy Diameter :{{ galaxy.diameter }}</p>
+    <p>Galaxy Type :{{ galaxy.type }}</p>
+    <p>Galaxy Description :{{ galaxy.description }}</p>
+
+</div>
 
 <p>
 
-<a href="/galaxies/{{ galaxy.id }}/edit">Edit this galaxy</a>
+<a href="/galaxies/{{ galaxy.id }}/edit">Edit this Galaxy</a>
 
-<a href="/galaxies/{{ galaxy.id }}/delete">Delete this galaxy</a>
+<a href="/galaxies">Back to Galaxies</a>
+
+<a href="/galaxies/{{ galaxy.id }}/delete">Delete this Galaxy</a>
+
 
 </p>
 

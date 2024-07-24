@@ -2,6 +2,9 @@
 
 This is the space tracker app for my Advanced Server-side Languages class (WDV442).
 
+# 07/24 
+Was able to get the twig files working. Can now see a list of Galaxies and edit an individual but can not get the new.twig file to pull to create a new one. 
+
 # 07/23 FINAL WEEK  
     Have started on the addition of twig into the project. It has been very interesting seeing how it works and implementing it into the app. I have barely started and hope to not have too many issues working with it and getting all my information to show properly.
 

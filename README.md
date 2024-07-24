@@ -3,6 +3,9 @@
 This is the space tracker app for my Advanced Server-side Languages class (WDV442).
 
 # -- Update 07/24
+Added the seeder components.
+
+# -- Update 07/24
 Finshed the CRUD for Stars and Planets all is working accordingly. Will now start on getting the images function to work.
 
 # -- Update 07/24

@@ -1,1 +1,9 @@
 {% extends '_layout.twig' %}
+
+{% block main_content %}
+
+<h1>Editing Galaxy: {{galaxy.name}} </h1>
+
+{% include 'Galaxy/_form.twig'  %}
+
+{% endblock %}

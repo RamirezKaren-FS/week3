@@ -9,9 +9,14 @@ const router = new express.Router()
 
 // RESTful resource mappings
 router.get(`/`, planetCtlr.index)
+router.get(`/:id/delete`, planetCtlr.remove)
+router.get('/new', planetCtlr.form)
+router.get(`/:id`, planetCtlr.show)
+router.get('/:id/edit', planetCtlr.form)
 router.post(`/`, planetCtlr.create)
-router.get(`/:id`, planetCtlr.show) 
+ 
 router.put(`/:id`, planetCtlr.update) 
+router.post(`/:id`, planetCtlr.update) 
 router.delete(`/:id`, planetCtlr.remove) 
 
 // export "router"

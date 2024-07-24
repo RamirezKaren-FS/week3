@@ -1,0 +1,26 @@
+{% extends '_layout.twig' %}
+
+{% block main_content %}
+
+<h1>#{{planet.id}} -- <strong>Planet: {{planet.name}}</strong> </h1>
+
+
+<div>
+    <p>Planet Agw :{{ planet.age }}</p>
+    <p>Planet Type :{{ planet.type }}</p>
+    <p>Planet Description :{{ planet.description }}</p>
+
+</div>
+
+<p>
+
+<a href="/planets/{{ planet.id }}/edit">Edit this Planet</a>
+
+<a href="/planets">Back to Planets</a>
+
+<a href="/planets/{{ planet.id }}/delete">Delete this Planet</a>
+
+
+</p>
+
+{% endblock %}

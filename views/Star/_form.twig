@@ -1,0 +1,30 @@
+{% if star is defined and star.id %}
+
+<form method="POST" action="/stars/{{star.id}}">
+
+{% else %}
+
+<form method="POST" action="/stars">
+
+{% endif %}
+
+<div>
+<label>Star Name :</label>
+    <input type="text" name="name" value="{% if star is defined %}{{ star.name }}{% endif %}"></input>
+</div>
+<div>
+<label>Star Magnitude :</label>
+    <input type="text" name="magnitude" value="{% if star is defined %}{{ star.magnitude }}{% endif %}"></input>
+</div>
+<div>
+<label>Star Type :</label>
+    <input type="text" name="type" value="{% if star is defined %}{{ star.type }}{% endif %}"></input>
+</div>
+<div>
+<label>Star Description :</label>
+    <input type="text" name="description" value="{% if star is defined %}{{ star.description }}{% endif %}"></input>
+</div>
+
+<button type="submit" value="Save Star">Save Star</button>
+
+</form>

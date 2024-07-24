@@ -1,0 +1,21 @@
+{% extends '_layout.twig' %}
+
+{% block main_content %}
+
+<h1>All Stars </h1>
+
+<ul>
+    {% for star in stars %}
+    <li>
+    <a a href="/stars/{{star.id}}">#{{star.id}} -- <strong>{{star.name}}</strong>
+    </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<p>
+<a a href="/stars/new">Create a new Star</a>
+
+</p>
+
+{% endblock %}

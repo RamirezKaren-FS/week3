@@ -2,6 +2,9 @@
 
 This is the space tracker app for my Advanced Server-side Languages class (WDV442).
 
+# 07/26
+Have completed the final touches to the app. Now will create video and turn in. 
+
 # 07/25 
 Was finally able to get the images to load, save, and show properly. After many hours of struggling everything came together. Now I just need to clean up my code and get my styling in order so it can be submitted. 
 

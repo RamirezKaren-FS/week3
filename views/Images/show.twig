@@ -1,0 +1,20 @@
+{% extends '_layout.twig' %}
+
+{% block main_content %}
+
+<h1>#{{image.id}} -- <strong>Image: {{req.imageId}}</strong> </h1>
+
+
+<img src="/images/galaxy.jpg"></img>
+<p>
+
+<a href="/images/{{ image.id }}/edit">Edit this Image</a>
+
+<a href="/images">Back to Images</a>
+
+<a href="/images/{{ image.id }}/delete">Delete this Image</a>
+
+
+</p>
+
+{% endblock %}

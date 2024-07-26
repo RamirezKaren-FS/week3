@@ -2,25 +2,24 @@
 
 {% block main_content %}
 
-<h1>#{{galaxy.id}} -- <strong>Galaxy: {{galaxy.name}}</strong> </h1>
+{% include 'partials/_header.twig' %}
 
+<h1 class="center">#{{galaxy.id}} -- <strong>Galaxy: {{galaxy.name}}</strong> </h1>
 
-<div>
+<img src="/images/{{galaxy.img}}" alt="{{galaxy.name}} image" id="img"></img>
+
+<div class="center">
     <p>Galaxy Diameter :{{ galaxy.diameter }}</p>
     <p>Galaxy Type :{{ galaxy.type }}</p>
     <p>Galaxy Description :{{ galaxy.description }}</p>
-
 </div>
 
-<p>
-
-<a href="/galaxies/{{ galaxy.id }}/edit">Edit this Galaxy</a>
-
-<a href="/galaxies">Back to Galaxies</a>
-
-<a href="/galaxies/{{ galaxy.id }}/delete">Delete this Galaxy</a>
-
-
+<p class="center" >
+    <a href="/galaxies/{{ galaxy.id }}/edit">Edit this Galaxy</a>
+    <a href="/galaxies">Back to Galaxies</a>
+    <a href="/galaxies/{{ galaxy.id }}/delete">Delete this Galaxy</a>
 </p>
+
+{% include 'partials/_footer.twig' %}
 
 {% endblock %}

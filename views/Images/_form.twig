@@ -1,7 +1,7 @@
 <form
   enctype="multipart/form-data"
   method="POST"
-  action="/images/{% if image.id %}{{ image.id }}{% endif %}">
+  action="/images/{% if image.id %}{{ image.id }}{% endif %}" class="center">
 
   {% if image.id %}
 
@@ -9,7 +9,7 @@
 
   {% endif %}
   
-  <div>
+  <div class="center">
     <label for="image">Upload Image:</label>
     <br />
     <input type="file" name="image" id="image" />

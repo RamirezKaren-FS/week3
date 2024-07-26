@@ -18,7 +18,8 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     diameter: DataTypes.STRING,
     type: DataTypes.STRING,
-    description: DataTypes.JSON
+    description: DataTypes.JSON,
+    img: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Galaxy',

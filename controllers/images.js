@@ -9,9 +9,7 @@ const create = async (req, res, next) => {
     const image = await Image.create(req.files)
     // Sets a pretext "imageId" for our upload middleware
     console.log(image)
-    let img = image.image
-    let name= img.name
-    req.imageId = name //image.id
+    req.imageId = image.id
     console.log(req.imageId)
 
     // Invoke our upload middleware with next()

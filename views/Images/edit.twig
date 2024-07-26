@@ -2,7 +2,9 @@
 
 {% block main_content %}
 
-<h1>Editing Image: {{image.id}} </h1>
+{% include 'partials/_header.twig' %}
+
+<h1 class="center">Editing Image: {{image.id}} </h1>
 
 {% include 'Images/_form.twig'  %}
 

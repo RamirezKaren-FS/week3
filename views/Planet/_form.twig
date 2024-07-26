@@ -1,10 +1,10 @@
 {% if planet is defined and planet.id %}
 
-<form method="POST" action="/planets/{{planet.id}}">
+<form method="POST" action="/planets/{{planet.id}}" class="center">
 
 {% else %}
 
-<form method="POST" action="/planets">
+<form method="POST" action="/planets" class="center">
 
 {% endif %}
 

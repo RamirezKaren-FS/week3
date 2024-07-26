@@ -2,7 +2,9 @@
 
 {% block main_content %}
 
-<h1>Editing Planet: {{planet.name}} </h1>
+{% include 'partials/_header.twig' %}
+
+<h1 class="center">Editing Planet: {{planet.name}} </h1>
 
 {% include 'Planet/_form.twig'  %}
 

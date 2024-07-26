@@ -1,13 +1,14 @@
 {% extends '_layout.twig' %}
+
 {% block main_content %}
-<h1>Welcome to Star Tracker Library</h1>
 
-<a href="/galaxies">View Galaxies</a>
+<h1 class="center" >Welcome to Star Tracker Library</h1>
 
-<a href="/stars">View Stars</a>
+<h3 class="center"> Come and explore Space from the confort of your own home! Take a look at what we've captured so far and feel free to add your favorite Galaxy, Star, or Planet!</h3>
+<div class="center">
 
-<a href="/planets">View Planets</a>
+{% include 'partials/_footer.twig' %}
 
-<a href="/images">View Images</a>
+</div>
 
 {% endblock %}

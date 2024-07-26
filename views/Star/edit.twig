@@ -2,7 +2,9 @@
 
 {% block main_content %}
 
-<h1>Editing Star: {{star.name}} </h1>
+{% include 'partials/_header.twig' %}
+
+<h1 class="center">Editing Star: {{star.name}} </h1>
 
 {% include 'Star/_form.twig'  %}
 

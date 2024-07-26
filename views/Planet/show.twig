@@ -2,25 +2,24 @@
 
 {% block main_content %}
 
-<h1>#{{planet.id}} -- <strong>Planet: {{planet.name}}</strong> </h1>
+{% include 'partials/_header.twig' %}
 
+<h1 class="center">#{{planet.id}} -- <strong>Planet: {{planet.name}}</strong> </h1>
 
-<div>
-    <p>Planet Agw :{{ planet.age }}</p>
+<img src="/images/{{planet.img}}" alt="{{planet.name}} image" id="img"></img>
+
+<div class="center">
+    <p>Planet Age :{{ planet.age }}</p>
     <p>Planet Type :{{ planet.type }}</p>
     <p>Planet Description :{{ planet.description }}</p>
-
 </div>
 
-<p>
-
-<a href="/planets/{{ planet.id }}/edit">Edit this Planet</a>
-
-<a href="/planets">Back to Planets</a>
-
-<a href="/planets/{{ planet.id }}/delete">Delete this Planet</a>
-
-
+<p class="center">
+    <a href="/planets/{{ planet.id }}/edit">Edit this Planet</a>
+    <a href="/planets">Back to Planets</a>
+    <a href="/planets/{{ planet.id }}/delete">Delete this Planet</a>
 </p>
+
+{% include 'partials/_footer.twig' %}
 
 {% endblock %}

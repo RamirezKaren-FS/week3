@@ -1,10 +1,10 @@
 {% if galaxy is defined and galaxy.id %}
 
-<form method="POST" action="/galaxies/{{galaxy.id}}">
+<form method="POST" action="/galaxies/{{galaxy.id}}" class="center">
 
 {% else %}
 
-<form method="POST" action="/galaxies">
+<form method="POST" action="/galaxies" class="center">
 
 {% endif %}
 

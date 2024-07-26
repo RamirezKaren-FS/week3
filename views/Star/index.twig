@@ -2,9 +2,11 @@
 
 {% block main_content %}
 
-<h1>All Stars </h1>
+{% include 'partials/_header.twig' %}
 
-<ul>
+<h1 class="center">All Stars </h1>
+
+<ul class="center">
     {% for star in stars %}
     <li>
     <a a href="/stars/{{star.id}}">#{{star.id}} -- <strong>{{star.name}}</strong>
@@ -13,9 +15,10 @@
     {% endfor %}
 </ul>
 
-<p>
-<a a href="/stars/new">Create a new Star</a>
-
+<p class="center">
+    <a a href="/stars/new">Create a new Star</a>
 </p>
+
+{% include 'partials/_footer.twig' %}
 
 {% endblock %}

@@ -20,7 +20,8 @@ module.exports = (sequelize, DataTypes) => {
     age: DataTypes.STRING,
     type: DataTypes.STRING,
     starId: DataTypes.INTEGER,
-    description: DataTypes.JSON
+    description: DataTypes.JSON,
+    img: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Planet',
